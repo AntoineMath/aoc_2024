@@ -1,9 +1,9 @@
 from collections import defaultdict
 
-def day1(left, right) -> int:
+def part1(left, right) -> int:
   return sum([abs(int(r)-int(l)) for l, r in zip(left, right)])
 
-def day2(left, right) -> int:
+def part2(left, right) -> int:
   right_freq = defaultdict(int)
   for n in right:
     right_freq[n] += 1
