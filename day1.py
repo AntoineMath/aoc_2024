@@ -17,8 +17,8 @@ if __name__ == "__main__":
   left = sorted([l.split(" ")[0].strip() for l in lines])
   right = sorted([l.split("   ")[1].strip() for l in lines])
   
-  print(day1(left, right))
-  print(day2(left, right))
+  print(part1(left, right))
+  print(part2(left, right))
 
   # time complexity: O(n log n) (timsort in python)
   # space complexity: O(n)
